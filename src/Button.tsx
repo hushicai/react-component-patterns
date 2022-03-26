@@ -23,6 +23,7 @@ const defaultProps = {
 
 export const ButtonWithDefaultProps = withDefaultProps(defaultProps, Button);
 
+// ———————————— 内联形式 begin————————————————
 // 函数组件需要显示提供Props，ts无法从参数中推导
 // const ButtonWithDefaultProps = withDefaultProps<Props>(
 //   defaultProps,
@@ -47,5 +48,6 @@ export const ButtonWithDefaultProps = withDefaultProps(defaultProps, Button);
 //     }
 //   },
 // );
+// ———————————— 内联形式 end————————————————
 
 export default Button;
