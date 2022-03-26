@@ -75,7 +75,7 @@ scheduler@^0.20.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-typescript@^4.7.0-dev.20220325:
-  version "4.7.0-dev.20220325"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.0-dev.20220325.tgz#54036cb3502230737530610887050257e60c8f83"
-  integrity sha512-3S7MAr3P2vkrpptkhoEuiATOU1kPa9+3FUrJAAYZ4/6mnI1SZWeVPeBIbhzIOUij27QrRMgSwN8aHrqtgGVqLA==
+typescript@^4.6.3:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
+  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
