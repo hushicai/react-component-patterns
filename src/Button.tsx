@@ -50,4 +50,17 @@ export const ButtonWithDefaultProps = withDefaultProps(defaultProps, Button);
 // );
 // ———————————— 内联形式 end————————————————
 
+// 函数组件defaultProps即将deprecated
+// https://twitter.com/dan_abramov/status/1133878326358171650
+// 对于函数组件默认属性，可直接通过默认参数来解决。
+export const ButtonWithDefaultParameters: FunctionComponent<Props> = ({
+  onClick: handleClick,
+  color = "red",
+  children,
+}) => (
+  <button style={{ color }} onClick={handleClick}>
+    {children}
+  </button>
+);
+
 export default Button;
