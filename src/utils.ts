@@ -1,17 +1,14 @@
 //https://github.com/lazarljubenovic/type-guards
 
 type Guard<T> = (input: any) => input is T;
-
-export type BasicString =
+type TypeString =
   | "string"
   | "boolean"
   | "number"
   | "object"
   | "function"
   | "symbol";
-export type Primitive = string | boolean | number | symbol;
-export type Basic = Primitive | object | Function;
-export type StringToBasic<T extends BasicString> = T extends "string"
+type StringToType<T extends TypeString> = T extends "string"
   ? string
   : T extends "number"
   ? number
@@ -25,11 +22,11 @@ export type StringToBasic<T extends BasicString> = T extends "string"
   ? symbol
   : never;
 
-function isOfBasicType<T extends BasicString>(
+function isOfBasicType<T extends TypeString>(
   basicString: T
-): Guard<StringToBasic<T>> {
+): Guard<StringToType<T>> {
   return ((input: any) => typeof input == basicString) as Guard<
-    StringToBasic<T>
+    StringToType<T>
   >;
 }
 
